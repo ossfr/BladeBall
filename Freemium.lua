@@ -1,6 +1,6 @@
 --[[
 
-  Verified Script / Compatable With Celery .gg/celery 
+  Verified Script / Compatible With Celery .gg/celery 
   Made by Primelus.dll / Fortnite GODxx223 / Pitbull Hub   
   (https://osshub.xyz https://getratted.lol) - #1 Scripts
 
