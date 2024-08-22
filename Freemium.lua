@@ -1,58 +1,37 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CeleryHub/CeleryHub/main/OnlyCelery.lua"))()
+-- loadstring(game:HttpGet("https://raw.githubusercontent.com/CeleryHub/CeleryHub/main/OnlyCelery.lua"))()
 local Stats = game:GetService('Stats')
-
 local Players = game:GetService('Players')
-
 local RunService = game:GetService('RunService')
-
 local ReplicatedStorage = game:GetService('ReplicatedStorage')
-
 local Celery_Util = loadstring(game:HttpGet('https://raw.githubusercontent.com/CeleryHub/CeleryHub/main/CeleUtil.lua'))()
-
 local local_player = Players.LocalPlayer
-
 local camera = workspace.CurrentCamera
-
 local celery_Data = nil
-
 local hit_Sound = nil
-
 local closest_Entity = nil
-
 local parry_remote = nil
 local hitsoundidagaugyg84ghun = "8706823799"
+
 getgenv().aura_Enabled = false
-
 getgenv().hit_sound_Enabled = false
-
 getgenv().hit_effect_Enabled = false
-
 getgenv().night_mode_Enabled = false
-
 getgenv().trail_Enabled = false
-
 getgenv().self_effect_Enabled = false
 
 local Services = {
-
     game:GetService('AdService'),
-
     game:GetService('SocialService')
-
 }
 
 -- Shop Fractions
 
 function SwordCrateManual()
-
-game:GetService("ReplicatedStorage").Remote.RemoteFunction:InvokeServer("PromptPurchaseCrate", workspace.Spawn.Crates.NormalSwordCrate)
-
+    game:GetService("ReplicatedStorage").Remote.RemoteFunction:InvokeServer("PromptPurchaseCrate", workspace.Spawn.Crates.NormalSwordCrate)
 end
 
 function ExplosionCrateManual()
-
-game:GetService("ReplicatedStorage").Remote.RemoteFunction:InvokeServer("PromptPurchaseCrate", workspace.Spawn.Crates.NormalExplosionCrate)
-
+    game:GetService("ReplicatedStorage").Remote.RemoteFunction:InvokeServer("PromptPurchaseCrate", workspace.Spawn.Crates.NormalExplosionCrate)
 end
 
 function SwordCrateAuto()
@@ -83,7 +62,7 @@ end
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Blade Ball Celery", HidePremium = true, SaveConfig = true, ConfigFolder = "cElerytEst"})
+local Window = OrionLib:MakeWindow({Name = "Blade Ball - Celery", HidePremium = true, SaveConfig = true, ConfigFolder = "cElerytEst"})
 local Tab = Window:MakeTab({
 	Name = "Main",
 	Icon = "rbxassetid://4483345998",
