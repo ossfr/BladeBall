@@ -62,7 +62,7 @@ end
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Blade Ball - Celery", HidePremium = true, SaveConfig = true, ConfigFolder = "cElerytEst"})
+local Window = OrionLib:MakeWindow({Name = "Blade Ball - OSS Hub", HidePremium = true, SaveConfig = true, ConfigFolder = "cElerytEst"})
 local Tab = Window:MakeTab({
 	Name = "Main",
 	Icon = "rbxassetid://4483345998",
